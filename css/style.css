@@ -65,11 +65,17 @@ li a{
     transition: 0.2s;
     color: white;
 }
+.mainkamain{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: var(--DRAK-BALCK);
+
+}
 .main{
-    margin-left: 100px;
+    width: 85vw;
     display: flex;
     justify-content: space-between;
-    margin-right: 100px;
 }
 
 .main h1{
@@ -138,13 +144,6 @@ li a{
     }
     .menu{
         display: none;
-    }
-
-    .main{
-        margin-left:10vw;
-        display: flex;
-        justify-content: space-between;
-        margin-right: 10vw;
     }
     
     .main h1{
