@@ -53,13 +53,10 @@ li a{
     border-radius: 25px;
     background: #FFF;
     border: none;
-    padding: 12px 40px;
+    padding: 10px 40px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
-.nav button a{
-    text-decoration: none;
     color: #000;
     font-size: 22px;
 }
@@ -144,10 +141,10 @@ li a{
     }
 
     .main{
-        margin-left:15vw;
+        margin-left:10vw;
         display: flex;
         justify-content: space-between;
-        margin-right: 15vw;
+        margin-right: 10vw;
     }
     
     .main h1{
