@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -14,9 +14,10 @@ html,body {
 :root {
     --DRAK-BALCK: #161616;
     --LIGHT-BALCK: #323233;
+    --RED:#FF0808;
 }
 
-.main{
+.header{
     display: flex;
     justify-content: center;
 }
@@ -52,7 +53,7 @@ li a{
     border-radius: 25px;
     background: #FFF;
     border: none;
-    padding: 16px 41px;
+    padding: 12px 40px;
     color: #000;
     font-size: 22px;
     font-style: normal;
@@ -63,4 +64,63 @@ li a{
     background-color: #fd2222;
     color: #000;
     transition: 0.2s;
+}
+.main{
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+}
+
+.main h1{
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 150px;
+    color: white;
+}
+
+.main p {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.main img {
+    width: 491px;
+    height: 491px;
+    flex-shrink: 0;
+}
+
+.text p{
+    margin-top: 80px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.mainbutton{
+    margin-left: 100px;
+    display: flex;
+    gap: 40px;
+}
+
+.mainbutton button{
+    font-size: medium;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    padding: 16px 60px;
+}
+
+.redwala{
+    background-color: red;
+    color: white;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
 }
