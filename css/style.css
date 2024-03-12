@@ -23,7 +23,7 @@ html,body {
 }
 .nav{
     margin-top: 32px;
-    width: 1240px;
+    width: 85vw;
     height: 72px;
     background-color: var(--DRAK-BALCK);
     display: flex;
@@ -54,22 +54,25 @@ li a{
     background: #FFF;
     border: none;
     padding: 12px 40px;
-    color: #000;
-    font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
-.nav button:hover{
-    background-color: #fd2222;
+.nav button a{
+    text-decoration: none;
     color: #000;
+    font-size: 22px;
+}
+.nav button:hover{
+    background-color: #38fd22;
     transition: 0.2s;
+    color: white;
 }
 .main{
     margin-left: 100px;
     display: flex;
     justify-content: space-between;
-    width: 1240px;
+    margin-right: 100px;
 }
 
 .main h1{
@@ -113,14 +116,72 @@ li a{
 }
 
 .redwala{
-    background-color: red;
+    background-color: rgb(161, 7, 7);
     color: white;
 }
-
+.redwala:hover{
+    background-color: #ff0000;
+    transition: 0.2s;
+    color: white;
+}
 .arrow{
     display: flex;
     justify-content: center;
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 100px;
+}
+
+/* resposnive of main page yaha se hai */
+
+
+@media screen and (max-width: 600px) {
+    .main img{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+
+    .main{
+        margin-left:15vw;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 15vw;
+    }
+    
+    .main h1{
+        font-size: 50px;
+        font-weight: 900;
+        margin-top: 100px;
+        color: white;
+    }
+    
+    .main p {
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .mainbutton{
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        align-items: center;
+    }
+
+    .mainbutton button{
+        font-size: medium;
+        font-weight: 700;
+        border-radius: 25px;
+        border: none;
+        width: 70vw;
+    }
+    
+
+    .nav button{
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+    
 }
