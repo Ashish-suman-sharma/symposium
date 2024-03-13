@@ -479,6 +479,7 @@ text-transform: capitalize;
     color: aliceblue;
 }
 
+
 @media screen and (max-width: 600px){
     .right{
         display: none;
@@ -501,6 +502,10 @@ text-transform: capitalize;
     .frist{
         font-size: 10px;
         margin-right: 2px;
+    }
+
+    .footer{
+        margin-top: 3vh;
     }
 }
 
