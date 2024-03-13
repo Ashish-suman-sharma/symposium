@@ -440,6 +440,45 @@ text-transform: capitalize;
 
 
 
+
+
+
+/* footer ka css yaha se */
+
+.footer{
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.sub-footer{
+    margin-top: 3vh;
+    display: flex;
+    width: 85vw;
+    
+}
+.vmkv{ 
+    width:40%;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+.info{
+    display: flex;
+    color: white; 
+    width: 60%;
+    justify-content: space-between;
+}
+.khatam{
+    margin-top: 3vh;
+    color: aliceblue;
+}
+
 @media screen and (max-width: 600px){
     .right{
         display: none;
@@ -457,5 +496,10 @@ text-transform: capitalize;
     #submit-button{
         margin-left: 50%;
         transform: translateX(-50%);
+    }
+
+    .frist{
+        font-size: 10px;
+        margin-right: 2px;
     }
 }
