@@ -212,7 +212,7 @@ li a{
 .eventheading{
     height:10vh;
     width: 85vw;
-    color: red;
+    color: white;
     margin-top: 3vh;
     display: flex;
     font-size: 30px;
@@ -348,3 +348,114 @@ li a{
 }
 
 
+/* conact form ka css */
+
+
+
+.contactdiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact {
+    display: flex;
+    width: 85vw;
+    background-color: #161616;
+    border-radius: 8px; 
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    
+}
+.left h1{
+    color: aliceblue;
+}
+.left h4{
+        color: aliceblue;   
+}
+.left hr{
+    width: 40vw;
+    margin-bottom: 20px;
+
+}
+.form-login{
+    margin-top: 3vh;
+}
+.form-login input[type=text] {
+    background-color: #323232;
+    border-radius: 24px;
+    border: 1px solid black;
+    width: 40vw;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+#submit-button{
+    width: 40vw;
+    height: 50px;
+    border-radius: 24px;
+    border: solid black 1px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.form-login input::placeholder {
+    color: aliceblue;
+    opacity: 40%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding-left: 50px;
+}
+.right-form-header{
+margin-top: 120px;
+margin-bottom: 25px;
+text-transform: capitalize;
+
+}
+.cta-mail a{
+    font-size: 2rem;
+    text-decoration: none;
+    margin-left: 100px;
+    color: #fff;
+    
+}
+.sympso-text{
+    margin-top: 20px ;
+}
+.cta-last{
+    margin-top: 185px;
+    font-size: 24px;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .right{
+        display: none;
+    }
+
+    .left{
+        width: 85vw;
+    }
+    
+    .left hr{
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+
+    #submit-button{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
