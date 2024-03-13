@@ -185,7 +185,8 @@ li a{
     border-radius: 15px;
     border: none;
     background-color: var(--DRAK-BALCK);
-    margin-right: 20px
+    margin-right: 20px;
+    color: white;
 }
 ::placeholder{
     color: white;
@@ -218,7 +219,33 @@ li a{
     border-top: 3px solid var(--DRAK-BALCK);
     border-bottom: 3px solid var(--DRAK-BALCK);
 }
+.cards{
+    width: 85vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 10px;
+    width: calc(33.33% - 30px);
+    height: 280px;
+    background-color: var(--DRAK-BALCK);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
 
+.card img,h2 {
+    margin: 10px;
+} 
+
+.card img {
+    border-radius: 20px;
+}
+.card p {
+    margin-left: 10px;
+    font-size: 12px;
+}
 /* resposnive of main page yaha se hai */
 
 
@@ -287,6 +314,20 @@ li a{
     
     .serch input{
         width: 60vw;
+    }
+
+    .cards{
+        width: 85vw;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .card{
+        margin: 10px;
+        width: calc(100% - 20px);
+        height: 280px;
+        background-color: var(--DRAK-BALCK);
+        border-radius: 30px;
     }
     
 }
