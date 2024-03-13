@@ -180,7 +180,8 @@ li a{
 }
 
 .serch input{
-    padding: 15px 10vw;
+    padding: 15px;
+    width: 30vw;
     border-radius: 15px;
     border: none;
     background-color: var(--DRAK-BALCK);
@@ -284,6 +285,9 @@ li a{
         padding: 15px 5vw;
     }
     
+    .serch input{
+        width: 60vw;
+    }
     
 }
 
