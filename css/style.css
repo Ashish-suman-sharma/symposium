@@ -167,6 +167,57 @@ li a{
     width: 50%;
 }
 
+
+.allcard{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.serch{
+    margin-top: 5vh;
+    width: 85vw;
+}
+
+.serch input{
+    padding: 15px 10vw;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--DRAK-BALCK);
+    margin-right: 20px
+}
+::placeholder{
+    color: white;
+}
+
+.serch button {
+    background-color: white;
+    color: black;
+    padding: 15px 3vw;
+    border: none;
+    border-radius: 15px;
+}
+
+.cardsdeatil{
+    background-color: var(--LIGHT-BALCK);
+    height: 100vh;
+}
+.eventdiv{
+    display: flex;
+    justify-content: center;
+}
+.eventheading{
+    height:10vh;
+    width: 85vw;
+    color: white;
+    margin-top: 3vh;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    border-top: 3px solid var(--DRAK-BALCK);
+    border-bottom: 3px solid var(--DRAK-BALCK);
+}
+
 /* resposnive of main page yaha se hai */
 
 
@@ -229,6 +280,10 @@ li a{
         justify-content: space-between;
         width: 100%;
     }
+    .serch button {
+        padding: 15px 5vw;
+    }
+    
     
 }
 
