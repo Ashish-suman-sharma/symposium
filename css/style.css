@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Source Sans 3", sans-serif;
+    scroll-behavior: smooth;
 }
 html,body {
   height: 100%;
@@ -339,7 +340,7 @@ li a{
     }
     .card{
         margin: 10px;
-        width: calc(100% - 20px);
+        width: calc(100% );
         height: 280px;
         background-color: var(--DRAK-BALCK);
         border-radius: 30px;
@@ -353,9 +354,11 @@ li a{
 
 
 .contactdiv{
-    width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    
 }
 .contact {
     display: flex;
@@ -415,7 +418,7 @@ li a{
     display: flex;
     flex-direction: column;
     color: aliceblue;
-    padding-left: 50px;
+    align-items:center;
 }
 .right-form-header{
 margin-top: 120px;
@@ -462,11 +465,12 @@ text-transform: capitalize;
 }
 .vmkv{ 
     width:40%;
+    display: flex;
+}
+.vmkv h1{
     color: aliceblue;
     font-weight: 900;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
+    font-size: 1.5rem;
 }
 .info{
     display: flex;
@@ -509,4 +513,20 @@ text-transform: capitalize;
     }
 }
 
-/* contact page ka css */
+/* faltu ka css */
+.abcd{
+    margin-top: 3vh;
+    background-color: var(--LIGHT-BALCK);
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+}
+sl-details{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 85vw;
+    color: white;
+    background-color: var(--LIGHT-BALCK);
+}
+
+

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quantas-24</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/themes/dark.css" />
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/shoelace-autoloader.js"></script>
+
   </head>
   <body>
     <div class="wrapper">
@@ -15,7 +18,7 @@
           </div>
           <div class="menu">
             <ul>
-              <li><a href="#event">Events</a></li>
+              <li><a href="#cardsdiv">Events</a></li>
               <li><a href="#About">About Events</a></li>
               <li><a href="#schedule">Schedule</a></li>
               <li><a href="#coordinators">Co-ordinators</a></li>
@@ -49,7 +52,9 @@
         <a href="https://forms.gle/psuitTkyJsYnnm2e7" ><button class="redwala">Resgister for events</button></a>
       </div>
       <div class="arrow">
-        <img src="./assets/Icon chevron down.png" alt="">
+        <a href="#cardsdiv">
+          <img src="./assets/Icon chevron down.png" alt="">
+        </a>
       </div>  
     </div>
 
@@ -80,7 +85,7 @@
 
     <!-- new section of card start here -->
 
-    <section class="cardsdeatil">
+    <section id="cardsdiv" class="cardsdeatil">
       <div class="allcard">
         <div class="serch">
           <input type="text" placeholder="Search Events">
@@ -129,40 +134,40 @@
       </div>
     </section>
 
-    <section class=" aboutevent">
-      <div class="eventdiv">
-        <div class="eventheading">
-          About events
-        </div>
-        <div class="about">
-
-        </div>
+    <section id="About" class="abcd">
+      <div class="eventheading">
+        About events
       </div>
+      <sl-details summary="Toggle Me">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis corrupti quidem facere ullam? Qui debitis quis nemo fugiat molestias autem at eum in 
+      </sl-details>
     </section>
 
-    <section class=" aboutevent">
-      <div class="eventdiv">
-        <div class="eventheading">
-          Events Co-Ordinator's
-        </div>
-        <div class="about">
-
-        </div>
+    <section id="coordinators" class="abcd">
+      <div class="eventheading">
+        Co-ordinators
       </div>
+      <sl-details summary="Toggle Me">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis corrupti quidem facere ullam? Qui debitis quis nemo fugiat molestias autem at eum in 
+      </sl-details>
     </section>
 
-    <section class=" aboutevent">
-      <div class="eventdiv">
-        <div class="eventheading">
-          Shedule of events
-        </div>
-        <div class="about">
-
-        </div>
+    <section id="schedule" class="abcd">
+      <div class="eventheading">
+        Shedule of events
       </div>
+      <sl-details summary="Toggle Me">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis corrupti quidem facere ullam? Qui debitis quis nemo fugiat molestias autem at eum in 
+      </sl-details>
     </section>
 
-    <section class="contactdiv">
+    <section id="contact" class="contactdiv">
       <div class="contact">
         <div class="left">
           <h1>LET'S CONNECT !</h1>
@@ -179,38 +184,31 @@
         <div class="right">
           <h3 class="right-form-header">VMKVEC symposium colleage event</h3>
           <p class="cta-mail">
-            <a class="sympso-text" href="mailto:symposium@vmkvec@edu.in"><span >symposium@vmkvec@edu.in</span></a
-            ><br />
+            <a class="sympso-text" href="mailto:symposium@vmkvec@edu.in"><span >symposium@vmkvec@edu.in</span></a>
             <a class="sympso-text" href="tel:+91 123456789">+91 123456789</a>
           </p>
-          <p class="cta-last">Stay Connected via social media</p>
-          <div class="cta-icon">
-            <ion-icon class="cta-icon-pack" name="logo-twitter"></ion-icon>
-            <ion-icon class="cta-icon-pack" name="logo-facebook"></ion-icon>
-            <ion-icon class="cta-icon-pack" name="logo-youtube"></ion-icon>
-          </div>
         </div>
       </div>
     </section>
 
     <div class="footer">
       <div class="sub-footer">
-        <div class="vmkv">VMKVEC</div>
+        <div class="vmkv"><h1>VMKVEC</h1></div>
         <div class="info">
           <div class="frist">
             <p>Engage with us</p>
             <p>Latest Updates</p>
-            <p>social media</p>
+            <p>Social media</p>
           </div>
           <div class="frist">
             <p>Contact Us</p>
-            <p>collaborate with us</p>
-            <p>join our community</p>
+            <p>Collaborate </p>
+            <p>Our community</p>
           </div>
           <div class="frist">
-            <p>explore insights</p>
-            <p>enjoy event</p>
-            <p>explore events</p>
+            <p>Explore insights</p>
+            <p>About event</p>
+            <p>Explore events</p>
           </div>
         </div>
       </div>
