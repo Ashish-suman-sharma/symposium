@@ -201,17 +201,18 @@ li a{
 }
 
 .cardsdeatil{
+    margin-top: 5vh;
     background-color: var(--LIGHT-BALCK);
-    height: 100vh;
 }
 .eventdiv{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .eventheading{
     height:10vh;
     width: 85vw;
-    color: white;
+    color: red;
     margin-top: 3vh;
     display: flex;
     font-size: 30px;
@@ -226,7 +227,7 @@ li a{
 }
 .card{
     margin: 10px;
-    width: calc(33.33% - 30px);
+    width: calc(33.33% - 25px);
     height: 280px;
     background-color: var(--DRAK-BALCK);
     border-radius: 30px;
@@ -241,10 +242,24 @@ li a{
 
 .card img {
     border-radius: 20px;
+    height: 152px;
 }
 .card p {
     margin-left: 10px;
     font-size: 12px;
+}
+
+.aboutevent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
+    background-color: var(--LIGHT-BALCK);
+}
+
+.about{
+    width: 85vw;
+    height: 100px;
 }
 /* resposnive of main page yaha se hai */
 
