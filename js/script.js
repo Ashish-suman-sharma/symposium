@@ -33,10 +33,10 @@ document
 
   // yaha se popup ka hai
   
-function openPopup() {
-  document.getElementById("popup").style.display = "block";
-}
+// function openPopup() {
+//   document.getElementById("popup").style.display = "block";
+// }
 
-function closePopup() {
-  document.getElementById("popup").style.display = "none";
-}
+// function closePopup() {
+//   document.getElementById("popup").style.display = "none";
+// }

@@ -533,7 +533,7 @@ sl-details{
 
 /* pop up ka style */
 
-.popup {
+/* .popup {
     display: none;
     position: fixed;
     top: 0;
@@ -573,9 +573,33 @@ table {
 th, td {
     padding: 10px;
     text-align: center;
-}
+} */
 
-/* Alternating row colors */
 tr:nth-child(even) {
     background-color: #161616;
+}
+
+
+/* about the event page */
+.cont {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.cont h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+.cont p {
+    line-height: 1.5;
+}
+.cont ul {
+    list-style: none;
+    padding-left: 0;
+}
+.cont li {
+    margin-bottom: 10px;
+}
+.highlight {
+    color: #ffcc00;
 }
