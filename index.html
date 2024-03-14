@@ -100,48 +100,58 @@
 
       <div class="eventdiv">
         <div class="cards">
-          <div class="card">
+          <div class="card" onclick="openPopup()" >
             <img src="assets\ilya-pavlov-OqtafYT5kTw-unsplash.jpg" alt="">
             <h2>Coding and debugging</h2>
             <p>Unraveling bugs, weaving solutions in the  code</p>
           </div>
-          <div class="card">
+          <div class="card" onclick="openPopup()">
             <img src="assets\istockphoto-512222688-612x612.jpg" alt="">
             <h2>Paper presentation</h2>
             <p>Ideas as papers pave the path to innovation.</p>
           </div>
-          <div class="card">
-            <img src="assets\Image (1).png" alt="">
+          <div class="card" onclick="openPopup()">
+            <img src="https://media.istockphoto.com/id/1167944632/photo/letting-her-fingers-do-the-work.webp?b=1&s=170667a&w=0&k=20&c=gnDQHvnKfFUijrl16vr-dhV4kYI9ichL9HNLunG-2WI=" alt="">
             <h2>Type Racer</h2>
             <p>Typing at the speed of thought, racing against the clock</p>
           </div>
-          <div class="card">
-            <img src="assets\Image (1).png" alt="">
+          <div class="card" onclick="openPopup()">
+            <img src="https://images.unsplash.com/photo-1534644107580-3a4dbd494a95?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
             <h2>Aptitude test</h2>
             <p>Minds sharpened, puzzles cracked, aptitude unlocked.</p>
           </div>
-          <div class="card">
-            <img src="assets\Image (1).png" alt="">
+          <div class="card" onclick="openPopup()">
+            <img src="https://plus.unsplash.com/premium_photo-1682125771198-f7cbed7cb868?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
             <h2>Short film</h2>
             <p>Moments captured, stories told, in  cinematic eyes.</p>
           </div>
-          <div class="card">
-            <img src="assets\Image (1).png" alt="">
+          <div class="card" onclick="openPopup()">
+            <img src="https://media.istockphoto.com/id/695936656/photo/business-woman-brain-hemisphere-on-the-blackboard.jpg?s=1024x1024&w=is&k=20&c=Ebl3eaZagYOUvyavBceZgWWD4Tp0SyGdq5WGREMUEno=" alt="">
             <h2>Memory master</h2>
             <p>Recall, memory molds, mastering the mind's archive.</p>
           </div>
         </div>
       </div>
     </section>
+<!-- popup yaha hai -->
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Popup Title</h2>
+        <p>Extra details about the card.</p>
+      </div>
+    </div>
+
+<!-- popup khtm -->
+
 
     <section id="About" class="abcd">
       <div class="eventheading">
         About events
       </div>
       <sl-details summary="Toggle Me">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis corrupti quidem facere ullam? Qui debitis quis nemo fugiat molestias autem at eum in 
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio corporis repudiandae voluptates cumque aspernatur unde, cum eveniet sed amet est nostrum adipisci atque tempore, perferendis placeat culpa enim iusto illum.
       </sl-details>
     </section>
 
@@ -160,10 +170,58 @@
       <div class="eventheading">
         Shedule of events
       </div>
-      <sl-details summary="Toggle Me">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis corrupti quidem facere ullam? Qui debitis quis nemo fugiat molestias autem at eum in 
+      <sl-details summary="Time table of all events and vanue">
+        <div>
+          <table>
+            <thead>
+                <tr>
+                    <th>Events</th>
+                    <th>Time</th>
+                    <th>Venue</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>coding and debuggung</td>
+                    <td>Row 1</td>
+                    <td>Row 1</td>
+                </tr>
+                <tr>
+                    <td>Row 2</td>
+                    <td>Row 2</td>
+                    <td>Row 2</td>
+                </tr>
+
+                <tr>
+                  <td>Row 3</td>
+                  <td>Row 3</td>
+                  <td>Row 3</td>
+                </tr>
+                <tr>
+                  <td>Row 4</td>
+                  <td>Row 4</td>
+                  <td>Row 4</td>
+                </tr>
+                <tr>
+                  <td>Row 5</td>
+                  <td>Row 5</td>
+                  <td>Row 5</td>
+                </tr>
+
+                <tr>
+                  <td>Row 6</td>
+                  <td>Row 6</td>
+                  <td>Row 6</td>
+                </tr>
+                
+                <tr>
+                  <td>Row 7</td>
+                  <td>Row 7</td>
+                  <td>Row 7</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
       </sl-details>
     </section>
 
