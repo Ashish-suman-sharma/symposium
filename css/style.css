@@ -9,7 +9,11 @@
 html,body {
   height: 100%;
   width: 100%;
-  background-color: #161616;
+  background: rgb(2,0,36);
+    background: -moz-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 44%, rgba(0,212,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 44%, rgba(0,212,255,1) 100%);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 44%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
 }
 
 :root {
@@ -21,12 +25,13 @@ html,body {
 .header{
     display: flex;
     justify-content: center;
+    background-color: #333333;
 }
 .nav{
     margin-top: 32px;
     width: 85vw;
     height: 72px;
-    background-color: var(--DRAK-BALCK);
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,6 +48,11 @@ li a{
     text-decoration: none;
     font-size: 22px;
     margin: 0 16px;
+}
+
+li a:hover{
+    color: #ff0000;
+    transition: 0.2s;
 }
 
 .logo img {
@@ -70,8 +80,7 @@ li a{
     display: flex;
     justify-content: center;
     width: 100vw;
-    background-color: var(--DRAK-BALCK);
-
+   background-color: transparent;
 }
 .main{
     width: 85vw;
@@ -222,22 +231,6 @@ li a{
     border-top: 3px solid var(--DRAK-BALCK);
     border-bottom: 3px solid var(--DRAK-BALCK);
 }
-.cards{
-    width: 85vw;
-    display: flex;
-    flex-wrap: wrap;
-}
-.card{
-    margin: 10px;
-    width: calc(33.33% - 25px);
-    height: 280px;
-    background-color: var(--DRAK-BALCK);
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    /
-}
 /* suru new card */
 
 .cardsss{
@@ -253,6 +246,7 @@ li a{
 }
 .cardd {
   margin-top: 20px;
+  background-color: rgb(0, 217, 255);
   margin-bottom: 20px;
   position: relative;
   width: calc(33.33% - 25px);

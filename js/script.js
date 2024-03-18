@@ -15,13 +15,15 @@ document
         body: formData,
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (response.status >= 200 && response.status < 300) {
         document.getElementById("statusMessage").textContent =
           "Form submitted successfully!";
         document.getElementById("myForm").reset();
       } else {
         document.getElementById("statusMessage").textContent =
-          "Form submission failed!";
+          data.message || "Form submission failed!";
       }
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -29,14 +31,3 @@ document
         "Error submitting form!";
     }
   });
-
-
-  // yaha se popup ka hai
-  
-// function openPopup() {
-//   document.getElementById("popup").style.display = "block";
-// }
-
-// function closePopup() {
-//   document.getElementById("popup").style.display = "none";
-// }
