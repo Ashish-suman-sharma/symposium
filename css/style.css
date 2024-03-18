@@ -18,17 +18,17 @@ html,body {
 
 :root {
     --DRAK-BALCK: #161616;
-    --LIGHT-BALCK: #323232;
+    --LIGHT-BALCK: #001F3F;
     --RED:#FF0808;
 }
 
 .header{
     display: flex;
     justify-content: center;
-    background-color: #333333;
+    background-color: #001F3F;
 }
 .nav{
-    margin-top: 32px;
+    margin-top: 24px;
     width: 85vw;
     height: 72px;
     background-color: transparent;
@@ -258,7 +258,7 @@ li a:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 20px 20px 60px #000000, -20px -20px 60px #000000;
+  box-shadow: 20px 20px 60px #587f83, -20px -20px 60px #160691;
 }
 
 .bg {
@@ -451,7 +451,7 @@ li a:hover{
 .contact {
     display: flex;
     width: 85vw;
-    background-color: #161616;
+    background-color: transparent;
     border-radius: 8px; 
 }
 
