@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatic Typing Sub-heading</title>
+<style>
+  .cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-color: black;
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h2 id="sub-heading"></h2>
+
+<script>
+    const subHeadings = [
+        "First sentence",
+        "Second sentence",
+        "Third sentence"
+    ];
+
+    let index = 0;
+    let textIndex = 0;
+    let interval;
+    let isDeleting = false;
+
+    function typeText() {
+        const subHeading = document.getElementById("sub-heading");
+        const text = subHeadings[index];
+        let newText;
+
+        if (isDeleting) {
+            newText = text.substring(0, textIndex - 1);
+        } else {
+            newText = text.substring(0, textIndex + 1);
+        }
+
+        subHeading.innerHTML = newText + "<span class='cursor'></span>";
+
+        if (!isDeleting && textIndex === text.length) {
+            isDeleting = true;
+        } else if (isDeleting && textIndex === 0) {
+            isDeleting = false;
+            index = (index + 1) % subHeadings.length;
+        }
+
+        textIndex = isDeleting ? textIndex - 1 : textIndex + 1;
+    }
+
+    function changeSubHeading() {
+        interval = setInterval(typeText, 100);
+    }
+
+    changeSubHeading();
+</script>
+
+</body>
+</html>
