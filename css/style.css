@@ -558,13 +558,30 @@ tr:nth-child(even) {
     height: 30px;
     background-color: black;
     animation: blink 1s infinite;
-  }
+}
 
-  @keyframes blink {
+@keyframes blink {
     0%, 100% {
       opacity: 1;
     }
     50% {
       opacity: 0;
     }
-  }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.icons a i {
+    color: #0f75da;
+    font-size: 20px;
+}
