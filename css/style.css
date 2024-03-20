@@ -11,11 +11,12 @@ html,body {
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    background: rgb(2,0,36);
-    background: -moz-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 44%, rgba(0,212,255,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 44%, rgba(0,212,255,1) 100%);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 44%, rgba(0,212,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    background: rgb(83,86,255);
+    background: rgb(83,86,255);
+background: -moz-linear-gradient(180deg, rgba(83,86,255,1) 20%, rgba(55,140,231,1) 54%, rgba(103,198,227,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(83,86,255,1) 20%, rgba(55,140,231,1) 54%, rgba(103,198,227,1) 100%);
+background: linear-gradient(180deg, rgba(83,86,255,1) 20%, rgba(55,140,231,1) 54%, rgba(103,198,227,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5356ff",endColorstr="#67c6e3",GradientType=1);
 }
 
 :root {
@@ -450,16 +451,14 @@ li a:hover{
 }
 .map{
     display: flex;
-    border-radius: 20px;
     justify-content: center;
     align-items: center;
-    width: 85vw;
+    width: 100vw;
     height: 50vh;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color: var(--LIGHT-BALCK);
 }
 .map iframe {
-    border-radius: 20px;
-    width: 95%;
+    width: 85vw;
     height: 95%;
 }
 @media screen and (max-width: 600px){
