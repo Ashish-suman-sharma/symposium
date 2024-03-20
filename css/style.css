@@ -7,9 +7,11 @@
     scroll-behavior: smooth;
 }
 html,body {
-  height: 100%;
-  width: 100%;
-  background: rgb(2,0,36);
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgb(2,0,36);
     background: -moz-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 44%, rgba(0,212,255,1) 100%);
     background: -webkit-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 44%, rgba(0,212,255,1) 100%);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 44%, rgba(0,212,255,1) 100%);
@@ -143,6 +145,12 @@ li a:hover{
     margin-right: 100px;
     margin-top: 100px;
 }
+.arrow img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}
 .mainofshort{
     margin-top: 5vh;
     display: flex;
@@ -227,8 +235,7 @@ li a:hover{
     display: flex;
     font-size: 30px;
     align-items: center;
-    border-top: 3px solid var(--DRAK-BALCK);
-    border-bottom: 3px solid var(--DRAK-BALCK);
+    border-bottom: 3px solid #ffffff;
 
 }
 /* suru new card */
@@ -547,8 +554,8 @@ tr:nth-child(even) {
 
 .cursor {
     display: inline-block;
-    width: 2px;
-    height: 20px;
+    width: 3px;
+    height: 30px;
     background-color: black;
     animation: blink 1s infinite;
   }
