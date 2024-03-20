@@ -585,3 +585,50 @@ footer {
     color: #0f75da;
     font-size: 20px;
 }
+/* table ka style */
+.coordinatetable {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .coordinatetable table {
+    border-collapse: collapse;
+    width: calc(30%);
+  }
+  .coordinatetable th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  .coordinatetable th {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .coordinatetable caption{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  
+  }
+
+@media screen and (max-width: 600px) {
+    .coordinatetable {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .coordinatetable table {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .coordinatetable th, td {
+        border: 2px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    .coordinatetable th {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+}
