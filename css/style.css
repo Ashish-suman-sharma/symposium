@@ -349,14 +349,14 @@ li a:hover{
 
 @media screen and (max-width: 600px) {
     .main img{
-        display: none;
+       display: none;
     }
     .menu{
         display: none;
     }
     
     .main h1{
-        font-size: 50px;
+        font-size: 60px;
         font-weight: 900;
         margin-top: 100px;
         color: white;
@@ -438,6 +438,12 @@ li a:hover{
       filter: blur(12px);
       animation: blob-bounce 5s infinite ease;
     }
+
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
     
 }
 .maps{
@@ -518,12 +524,17 @@ table {
 th, td {
     padding: 10px;
     text-align:left;
-
 } 
-
-tr:nth-child(even) {
+th{
     background-color: #5356FF;
 }
+
+tr {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+/* tr:nth-child(even) {
+    background-color: #5356FF;
+} */
 
 
 /* about the event page */
@@ -572,13 +583,18 @@ footer {
 /* table ka style */
 .coordinatetable {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
   }
-  .coordinatetable table {
+  .coordinatetable div{
+
     border-collapse: collapse;
     width: calc(30%);
-    /* box-shadow: 20px 20px 60px #587f83, -20px -20px 60px #160691; */
+  }
+
+  .coordinatetable div table {
+    margin-top: 10px;
   }
   .coordinatetable th,td {
     border: 1px solid black;
@@ -591,6 +607,9 @@ footer {
     font-weight: 700;
     margin-bottom: 10px;
   
+  }
+  td{
+    width: 50%;
   }
 
 @media screen and (max-width: 600px) {
@@ -618,7 +637,15 @@ footer {
         background-color: rgb(255, 255, 255);
         animation: blink 1s infinite;
     }
+
+    .coordinatetable div{
+        margin-top: 30px;
+        width: calc(100%);
+      }
     
+      .coordinatetable th,td {
+        border: 0.5px solid rgb(50, 42, 42);
+      }
 }
 
 .foot p{

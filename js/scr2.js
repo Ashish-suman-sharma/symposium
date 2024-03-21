@@ -36,7 +36,7 @@ function typeText() {
 }
 
 function changeSubHeading() {
-  interval = setInterval(typeText, 150);
+  interval = setInterval(typeText, 200);
 }
 
 changeSubHeading();
