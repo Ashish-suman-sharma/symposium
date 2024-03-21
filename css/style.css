@@ -13,10 +13,7 @@ html,body {
     overflow-y: auto;
     background: rgb(83,86,255);
     background: rgb(83,86,255);
-background: -moz-linear-gradient(180deg, rgba(83,86,255,1) 20%, rgba(55,140,231,1) 54%, rgba(103,198,227,1) 100%);
-background: -webkit-linear-gradient(180deg, rgba(83,86,255,1) 20%, rgba(55,140,231,1) 54%, rgba(103,198,227,1) 100%);
-background: linear-gradient(180deg, rgba(83,86,255,1) 20%, rgba(55,140,231,1) 54%, rgba(103,198,227,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5356ff",endColorstr="#67c6e3",GradientType=1);
+    background: linear-gradient(180deg, rgba(83,86,255,1) 20%, rgba(55,140,231,1) 54%, rgba(103,198,227,1) 100%);
 }
 
 :root {
