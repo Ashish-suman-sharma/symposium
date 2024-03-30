@@ -650,3 +650,9 @@ footer {
 .foot p{
     margin-bottom: 15px;
 }
+
+/* after 3 day chnage  */
+
+.evde td{
+    width: calc(33.33%);
+}
