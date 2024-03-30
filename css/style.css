@@ -656,3 +656,7 @@ footer {
 .evde td{
     width: calc(33.33%);
 }
+
+.cont li{
+    list-style: none;
+}
