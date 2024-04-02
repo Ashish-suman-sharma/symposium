@@ -122,8 +122,6 @@ h1{
 /* eventbox css */
 
 .eventbox{
-    /* background-color: red; */
-    /* width: 85vw; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -191,4 +189,96 @@ footer {
 }
 .foot p{
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .eventbox{
+        flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .box{
+        margin-top: 40px;
+        width: 85vw;
+    }
+
+    /* navbar css */
+    .main img{
+        display: none;
+     }
+     .menu{
+         display: none;
+     }
+     
+     .main h1{
+         font-size: 60px;
+         font-weight: 900;
+         margin-top: 100px;
+         color: white;
+     }
+     
+     .main p {
+         color: white;
+         font-size: 20px;
+         font-weight: 500;
+     }
+     .mainbutton{
+         margin-top: 5vh;
+         display: flex;
+         flex-direction: column;
+         margin-left: 0px;
+         align-items: center;
+     }
+ 
+     .mainbutton button{
+         font-size: medium;
+         font-weight: 700;
+         border-radius: 25px;
+         border: none;
+         width: 70vw;
+     }
+     
+ 
+     .nav button{
+         padding: 8px 20px;
+         font-size: 20px;
+     }
+
+     button{
+        padding: 16px 60px;
+        background-color: var(--RED);
+        transition: 0.2s;
+    }
+
+    .timecounter{
+        margin-top: 20px;
+        height: 100%;
+    }
+
+    
+    .timebox{
+        margin: 0 18px;
+    }
+    
+    h1{
+        font-size: 2.2rem;
+        color: white;
+    
+    }
+    
+    .timebox h1{
+        font-size: 2.5rem;
+        color: #ff0000;
+    }
+    
+    .timebox h3{
+        font-size: 1rem;
+        color: #333;
+    }
+
+    .timeleft , .timeleft2 {
+        gap: 8px;
+
+    }
+    
 }
