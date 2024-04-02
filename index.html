@@ -10,7 +10,37 @@
 <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/shoelace-autoloader.js"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  .custom-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+  }
+  .custom-popup {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .remove-icon-filters {
+      position: absolute;
+      font-size: 20px;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+  }
 
+  
+</style>
   </head>
   <body>
     <!-- <marquee style="font-size: 20px;  color: red; padding: 10px;" >According to the request received from various college students we allow spot registration for the symposium. Confirm your presence with our coordinators.</marquee> -->
@@ -408,6 +438,24 @@
         <!-- <div class="footer">
         </div> -->
     </footer>
+
+    <div class="custom-overlay" id="custom-overlay">
+      <div class="custom-popup">
+          <span class="remove-icon-filters" onclick="closePopup()">&times;</span>
+          <h2 style="color: red;">Spot registration is not Avilable</h2>
+          <p>kindly register Before 2/04/2024 5:30 pm </p>
+      </div>
+  </div>
+
+  <script>
+    window.onload = function() {
+        document.getElementById('custom-overlay').style.display = 'block';
+    };
+
+    function closePopup() {
+        document.getElementById('custom-overlay').style.display = 'none';
+    }
+</script>
 
     <script src="js/scr2.js"></script>
     <script src="js/script.js"></script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #overlay {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        $("#overlay").fadeIn("fast").delay(15000).fadeOut("fast");
+      });
+    </script>
+    <div id="overlay">
+      <script>
+          $(function () {
+              $('a').click(function(){
+                  window.open('/getting-started/feg-top-performers','mywindow','width=400,height=200,toolbar=yes,
+        location=yes,directories=yes,status=yes,menubar=yes,scrollbars=yes,copyhistory=yes,
+        resizable=yes')
+              });
+          });
+      </script>
+    </div>
+  </body>
+</html>
