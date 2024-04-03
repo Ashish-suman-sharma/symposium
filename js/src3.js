@@ -1,5 +1,5 @@
  //add diffrent time conter for diffent div timeleft
- const countDown = new Date("April 3, 2024 9:30:00").getTime();
+ const countDown = new Date("April 3, 2024 12:30:00").getTime();
  const y = setInterval(function(){
      const now = new Date().getTime();
      const distance = countDown - now;
@@ -19,7 +19,7 @@
  }, 1000);
 
  //same but for class timeleft2
- const countDown1 = new Date("April 3, 2024 9:30:00").getTime();
+ const countDown1 = new Date("April 3, 2024 12:30:00").getTime();
  const z = setInterval(function(){
      const now = new Date().getTime();
      const distance = countDown1 - now;
@@ -39,7 +39,7 @@
  }, 1000);
  
  //add spesicif time on 3 april 2024 date 
- const countDownDate = new Date("April 3, 2024 9:30:00").getTime();
+ const countDownDate = new Date("April 3, 2024 12:30:00").getTime();
  const x = setInterval(function(){
      const now = new Date().getTime();
      const distance = countDownDate - now;
